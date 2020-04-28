@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>frwiki dump progress on 20200420</title>
+        <link rel="stylesheet" type="text/css" href="/dumps.css" />
+        <style type="text/css">
+                .siteinfo {
+                        text-align: center;
+                }
+                li {
+                        list-style-type: none;
+                        padding: 0.5em 1.5em 0.5em 1.5em;
+                        background: #fff;
+                        margin-bottom: 1em;
+                }
+                li li {
+                        background-color: white;
+                        box-shadow: none;
+                        border-top: none;
+                        padding: 0px;
+                        margin-bottom: 0em;
+                }
+                li ul {
+                        margin-top: 4px;
+                        margin-bottom: 8px;
+                        box-shadow: none;
+                        border-top: none;
+                        padding: 0.5em 0px 0px;
+                }
+                .detail {
+                        font-weight: normal;
+                        font-style: italic;
+                }
+                .updates {
+                        font: monospace;
+                        font-size: smaller;
+                }
+                .status {
+                        font-weight: bold;
+                }
+                .status, .checksum {
+                        padding-left: 1em;
+                        padding-right: 1em;
+                }
+                li.in-progress {
+                        border-top: 3px solid #3366cc;
+                        font-weight: bold;
+                        box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.15 );
+                }
+                li.done {
+                        border-top: 3px solid #00af89;
+                        box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.15 );
+                }
+                li.failed {
+                        color: #b32424;
+                        font-weight: bold;
+                        border-top: 3px solid #b32424;
+                        box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.15 );
+                }
+                .waiting {
+                        color: #c8ccd1;
+                        box-shadow: none;
+                        border-top: none;
+                }
+                .progress {
+                        font-family: monospace;
+                        font-size: 80%;
+                        margin-left: .5in;
+                }
+                .notice {
+                        border: none;
+                        background-color: transparent;
+                        font-weight: normal;
+                        color: #b32424;
+                }
+        </style>
+</head>
+
+<body>
+        <h1>frwiki dump progress on 20200420</h1>
+
+        <p class="siteinfo">
+                This is the Wikimedia dump service.
+                Please read the <a href='../../legal.html'>copyrights</a> information.
+                See <a href="http://meta.wikimedia.org/wiki/Data_dumps">Meta:Data dumps</a>
+                for documentation on the provided data formats.
+        </p>
+        <p>
+          The 7zip decoder on Windows is known to have
+          <a href="https://phabricator.wikimedia.org/T208647">problems</a> with some bz2-format
+          files for larger wikis; we recommend the use of bzip2 for Windows for these cases.
+        </p>
+        <p>
+          Please report problems with these dumps on Phabricator and add the
+          <a href="https://phabricator.wikimedia.org/project/profile/1519/">Dumps-generation</a> tag.
+        </p>
+        <p class="notice"></p>
+
+        <p>See <a href="../../backup-index.html">all databases list</a>.</p>
+
+        <p class="previous">
+                <a href="../20200401/">Last dumped on 2020-04-01</a>
+        </p>
+
+        <p>
+          For a machine-readable version of the information on this page,
+          see <a href="dumpstatus.json">the json status file.</a>
+        </p>
+
+        <p class="status">
+                <span class='done'>Dump complete</span>
+        </p>
+
+        <p class="checksum">
+                Verify downloaded files against the <a href="/frwiki/20200420/frwiki-20200420-md5sums.txt">(md5)</a>, <a href="/frwiki/20200420/frwiki-20200420-sha1sums.txt">(sha1)</a> checksums
+                to check for corrupted files.
+        </p>
+
+        <ul>
+                <li class='done'><span class='updates'>2020-04-22 13:27:51</span> <span class='status'>done</span> <span class='title'>Recombine multiple bz2 streams</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream.xml.bz2">frwiki-20200420-pages-articles-multistream.xml.bz2</a> 4.5 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index.txt.bz2">frwiki-20200420-pages-articles-multistream-index.txt.bz2</a> 47.7 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-22 12:30:35</span> <span class='status'>done</span> <span class='title'>Articles, templates, media/file descriptions, and primary meta-pages, in multiple bz2 streams, 100 pages per stream</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream1.xml-p1p275787.bz2">frwiki-20200420-pages-articles-multistream1.xml-p1p275787.bz2</a> 475.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index1.txt-p1p275787.bz2">frwiki-20200420-pages-articles-multistream-index1.txt-p1p275787.bz2</a> 1.3 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream2.xml-p275788p927545.bz2">frwiki-20200420-pages-articles-multistream2.xml-p275788p927545.bz2</a> 523.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index2.txt-p275788p927545.bz2">frwiki-20200420-pages-articles-multistream-index2.txt-p275788p927545.bz2</a> 3.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream3.xml-p927546p2427545.bz2">frwiki-20200420-pages-articles-multistream3.xml-p927546p2427545.bz2</a> 563.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index3.txt-p927546p2427545.bz2">frwiki-20200420-pages-articles-multistream-index3.txt-p927546p2427545.bz2</a> 6.6 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream3.xml-p2427546p2516881.bz2">frwiki-20200420-pages-articles-multistream3.xml-p2427546p2516881.bz2</a> 26.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index3.txt-p2427546p2516881.bz2">frwiki-20200420-pages-articles-multistream-index3.txt-p2427546p2516881.bz2</a> 425 KB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream4.xml-p2516882p4016881.bz2">frwiki-20200420-pages-articles-multistream4.xml-p2516882p4016881.bz2</a> 503.7 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index4.txt-p2516882p4016881.bz2">frwiki-20200420-pages-articles-multistream-index4.txt-p2516882p4016881.bz2</a> 6.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream4.xml-p4016882p4592355.bz2">frwiki-20200420-pages-articles-multistream4.xml-p4016882p4592355.bz2</a> 187.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index4.txt-p4016882p4592355.bz2">frwiki-20200420-pages-articles-multistream-index4.txt-p4016882p4592355.bz2</a> 2.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream5.xml-p4592356p6092355.bz2">frwiki-20200420-pages-articles-multistream5.xml-p4592356p6092355.bz2</a> 517.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index5.txt-p4592356p6092355.bz2">frwiki-20200420-pages-articles-multistream-index5.txt-p4592356p6092355.bz2</a> 5.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream5.xml-p6092356p7494128.bz2">frwiki-20200420-pages-articles-multistream5.xml-p6092356p7494128.bz2</a> 432.6 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index5.txt-p6092356p7494128.bz2">frwiki-20200420-pages-articles-multistream-index5.txt-p6092356p7494128.bz2</a> 5.3 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream6.xml-p7494129p8994128.bz2">frwiki-20200420-pages-articles-multistream6.xml-p7494129p8994128.bz2</a> 325.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index6.txt-p7494129p8994128.bz2">frwiki-20200420-pages-articles-multistream-index6.txt-p7494129p8994128.bz2</a> 3.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream6.xml-p8994129p10494128.bz2">frwiki-20200420-pages-articles-multistream6.xml-p8994129p10494128.bz2</a> 374.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index6.txt-p8994129p10494128.bz2">frwiki-20200420-pages-articles-multistream-index6.txt-p8994129p10494128.bz2</a> 4.3 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream6.xml-p10494129p11994128.bz2">frwiki-20200420-pages-articles-multistream6.xml-p10494129p11994128.bz2</a> 371.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index6.txt-p10494129p11994128.bz2">frwiki-20200420-pages-articles-multistream-index6.txt-p10494129p11994128.bz2</a> 4.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream6.xml-p11994129p13272557.bz2">frwiki-20200420-pages-articles-multistream6.xml-p11994129p13272557.bz2</a> 336.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles-multistream-index6.txt-p11994129p13272557.bz2">frwiki-20200420-pages-articles-multistream-index6.txt-p11994129p13272557.bz2</a> 4.2 MB</li></ul></li>
+<li class='skipped'><span class='updates'>2020-04-23 18:15:51</span> <span class='status'>skipped</span> <span class='title'>All pages with complete edit history (.7z)</span></li>
+<li class='skipped'><span class='updates'>2020-04-23 18:15:51</span> <span class='status'>skipped</span> <span class='title'>All pages with complete page edit history (.bz2)</span></li>
+<li class='skipped'><span class='updates'>2020-04-23 18:15:51</span> <span class='status'>skipped</span> <span class='title'>history content of flow pages in xml format</span><ul><li class='detail'>These files contain flow page content in xml format.</li>
+<li class='missing'>frwiki-20200420-flowhistory.xml.bz2</li></ul></li>
+<li class='done'><span class='updates'>2020-04-24 02:35:16</span> <span class='status'>done</span> <span class='title'>content of flow pages in xml format</span><ul><li class='detail'>These files contain flow page content in xml format.</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-flow.xml.bz2">frwiki-20200420-flow.xml.bz2</a> 32.7 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-24 00:45:35</span> <span class='status'>done</span> <span class='title'>Recombine Log events to all pages and users</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging.xml.gz">frwiki-20200420-pages-logging.xml.gz</a> 627.0 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-24 00:44:36</span> <span class='status'>done</span> <span class='title'>Log events to all pages and users.</span><ul><li class='detail'>This contains the log of actions performed on pages and users.</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging1.xml.gz">frwiki-20200420-pages-logging1.xml.gz</a> 109.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging2.xml.gz">frwiki-20200420-pages-logging2.xml.gz</a> 50.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging3.xml.gz">frwiki-20200420-pages-logging3.xml.gz</a> 51.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging4.xml.gz">frwiki-20200420-pages-logging4.xml.gz</a> 110.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging5.xml.gz">frwiki-20200420-pages-logging5.xml.gz</a> 79.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-logging6.xml.gz">frwiki-20200420-pages-logging6.xml.gz</a> 226.5 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-23 11:19:03</span> <span class='status'>done</span> <span class='title'>Recombine all pages, current versions only.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current.xml.bz2">frwiki-20200420-pages-meta-current.xml.bz2</a> 6.2 GB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-23 10:26:23</span> <span class='status'>done</span> <span class='title'>All pages, current versions only.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current1.xml-p1p275787.bz2">frwiki-20200420-pages-meta-current1.xml-p1p275787.bz2</a> 554.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current2.xml-p275788p927545.bz2">frwiki-20200420-pages-meta-current2.xml-p275788p927545.bz2</a> 635.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current3.xml-p927546p2427545.bz2">frwiki-20200420-pages-meta-current3.xml-p927546p2427545.bz2</a> 746.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current3.xml-p2427546p2516881.bz2">frwiki-20200420-pages-meta-current3.xml-p2427546p2516881.bz2</a> 36.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current4.xml-p2516882p4016881.bz2">frwiki-20200420-pages-meta-current4.xml-p2516882p4016881.bz2</a> 681.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current4.xml-p4016882p4592355.bz2">frwiki-20200420-pages-meta-current4.xml-p4016882p4592355.bz2</a> 258.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current5.xml-p4592356p6092355.bz2">frwiki-20200420-pages-meta-current5.xml-p4592356p6092355.bz2</a> 702.7 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current5.xml-p6092356p7494128.bz2">frwiki-20200420-pages-meta-current5.xml-p6092356p7494128.bz2</a> 628.6 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current6.xml-p7494129p8994128.bz2">frwiki-20200420-pages-meta-current6.xml-p7494129p8994128.bz2</a> 513.3 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current6.xml-p8994129p10494128.bz2">frwiki-20200420-pages-meta-current6.xml-p8994129p10494128.bz2</a> 571.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current6.xml-p10494129p11994128.bz2">frwiki-20200420-pages-meta-current6.xml-p10494129p11994128.bz2</a> 557.3 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-meta-current6.xml-p11994129p13272564.bz2">frwiki-20200420-pages-meta-current6.xml-p11994129p13272564.bz2</a> 505.0 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-22 01:08:12</span> <span class='status'>done</span> <span class='title'><big><b>Recombine articles, templates, media/file descriptions, and primary meta-pages.</b></big></span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles.xml.bz2">frwiki-20200420-pages-articles.xml.bz2</a> 4.3 GB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 23:40:08</span> <span class='status'>done</span> <span class='title'><big><b>Articles, templates, media/file descriptions, and primary meta-pages.</b></big></span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles1.xml-p1p275787.bz2">frwiki-20200420-pages-articles1.xml-p1p275787.bz2</a> 471.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles2.xml-p275788p927545.bz2">frwiki-20200420-pages-articles2.xml-p275788p927545.bz2</a> 511.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles3.xml-p927546p2427545.bz2">frwiki-20200420-pages-articles3.xml-p927546p2427545.bz2</a> 536.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles3.xml-p2427546p2516881.bz2">frwiki-20200420-pages-articles3.xml-p2427546p2516881.bz2</a> 25.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles4.xml-p2516882p4016881.bz2">frwiki-20200420-pages-articles4.xml-p2516882p4016881.bz2</a> 477.8 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles4.xml-p4016882p4592355.bz2">frwiki-20200420-pages-articles4.xml-p4016882p4592355.bz2</a> 177.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles5.xml-p4592356p6092355.bz2">frwiki-20200420-pages-articles5.xml-p4592356p6092355.bz2</a> 487.6 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles5.xml-p6092356p7494128.bz2">frwiki-20200420-pages-articles5.xml-p6092356p7494128.bz2</a> 408.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles6.xml-p7494129p8994128.bz2">frwiki-20200420-pages-articles6.xml-p7494129p8994128.bz2</a> 308.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles6.xml-p8994129p10494128.bz2">frwiki-20200420-pages-articles6.xml-p8994129p10494128.bz2</a> 355.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles6.xml-p10494129p11994128.bz2">frwiki-20200420-pages-articles6.xml-p10494129p11994128.bz2</a> 351.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-pages-articles6.xml-p11994129p13272557.bz2">frwiki-20200420-pages-articles6.xml-p11994129p13272557.bz2</a> 317.4 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 09:41:07</span> <span class='status'>done</span> <span class='title'>Recombine first-pass for page XML data dumps</span><ul><li class='detail'>These files contain no page text, only revision metadata.</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history.xml.gz">frwiki-20200420-stub-meta-history.xml.gz</a> 11.4 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current.xml.gz">frwiki-20200420-stub-meta-current.xml.gz</a> 910.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles.xml.gz">frwiki-20200420-stub-articles.xml.gz</a> 453.9 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 09:05:09</span> <span class='status'>done</span> <span class='title'>First-pass for page XML data dumps</span><ul><li class='detail'>These files contain no page text, only revision metadata.</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history1.xml.gz">frwiki-20200420-stub-meta-history1.xml.gz</a> 1.9 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history2.xml.gz">frwiki-20200420-stub-meta-history2.xml.gz</a> 1.9 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history3.xml.gz">frwiki-20200420-stub-meta-history3.xml.gz</a> 1.9 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history4.xml.gz">frwiki-20200420-stub-meta-history4.xml.gz</a> 1.9 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history5.xml.gz">frwiki-20200420-stub-meta-history5.xml.gz</a> 2.0 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-history6.xml.gz">frwiki-20200420-stub-meta-history6.xml.gz</a> 1.8 GB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current1.xml.gz">frwiki-20200420-stub-meta-current1.xml.gz</a> 18.6 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current2.xml.gz">frwiki-20200420-stub-meta-current2.xml.gz</a> 44.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current3.xml.gz">frwiki-20200420-stub-meta-current3.xml.gz</a> 105.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current4.xml.gz">frwiki-20200420-stub-meta-current4.xml.gz</a> 141.4 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current5.xml.gz">frwiki-20200420-stub-meta-current5.xml.gz</a> 206.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-meta-current6.xml.gz">frwiki-20200420-stub-meta-current6.xml.gz</a> 394.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles1.xml.gz">frwiki-20200420-stub-articles1.xml.gz</a> 15.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles2.xml.gz">frwiki-20200420-stub-articles2.xml.gz</a> 32.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles3.xml.gz">frwiki-20200420-stub-articles3.xml.gz</a> 64.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles4.xml.gz">frwiki-20200420-stub-articles4.xml.gz</a> 78.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles5.xml.gz">frwiki-20200420-stub-articles5.xml.gz</a> 107.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-stub-articles6.xml.gz">frwiki-20200420-stub-articles6.xml.gz</a> 156.0 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-24 00:25:50</span> <span class='status'>done</span> <span class='title'>Recombine extracted page abstracts for Yahoo</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract.xml.gz">frwiki-20200420-abstract.xml.gz</a> 298.9 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-24 00:24:57</span> <span class='status'>done</span> <span class='title'>Extracted page abstracts for Yahoo</span><div class='progress'>b'2020-04-23 23:51:16: frwiki (ID 43119) 999 pages (40.7|40.7/sec all|curr), 1000 revs (40.8|40.8/sec all|curr), ETA 2020-04-27 18:21:00 [max 13280091]'</div>
+<ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract1.xml.gz">frwiki-20200420-abstract1.xml.gz</a> 94.2 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract2.xml.gz">frwiki-20200420-abstract2.xml.gz</a> 45.9 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract3.xml.gz">frwiki-20200420-abstract3.xml.gz</a> 50.5 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract4.xml.gz">frwiki-20200420-abstract4.xml.gz</a> 37.0 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract5.xml.gz">frwiki-20200420-abstract5.xml.gz</a> 35.1 MB</li>
+<li class='file'><a href="/frwiki/20200420/frwiki-20200420-abstract6.xml.gz">frwiki-20200420-abstract6.xml.gz</a> 36.3 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-23 18:29:06</span> <span class='status'>done</span> <span class='title'>List of all page titles</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-all-titles.gz">frwiki-20200420-all-titles.gz</a> 58.5 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-23 18:28:05</span> <span class='status'>done</span> <span class='title'>List of page titles in main namespace</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-all-titles-in-ns0.gz">frwiki-20200420-all-titles-in-ns0.gz</a> 21.6 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-23 18:27:28</span> <span class='status'>done</span> <span class='title'>Namespaces, namespace aliases, magic words.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-siteinfo-namespaces.json.gz">frwiki-20200420-siteinfo-namespaces.json.gz</a> 5 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:54:41</span> <span class='status'>done</span> <span class='title'>Base per-page data (id, title, old restrictions, etc).</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-page.sql.gz">frwiki-20200420-page.sql.gz</a> 347.8 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:40:09</span> <span class='status'>done</span> <span class='title'>Wiki category membership link records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-categorylinks.sql.gz">frwiki-20200420-categorylinks.sql.gz</a> 734.5 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:55:50</span> <span class='status'>done</span> <span class='title'>Tracks links in stable versions.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedrevs_tracking.sql.gz">frwiki-20200420-flaggedrevs_tracking.sql.gz</a> 772 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:30:02</span> <span class='status'>done</span> <span class='title'>Wiki interlanguage link records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-langlinks.sql.gz">frwiki-20200420-langlinks.sql.gz</a> 250.3 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:26:38</span> <span class='status'>done</span> <span class='title'>Metadata on current versions of uploaded media/files.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-image.sql.gz">frwiki-20200420-image.sql.gz</a> 5.6 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:33:34</span> <span class='status'>done</span> <span class='title'>This contains a row for each flagged revision containing who flagged it, when it was flagged, the flag values, and the quality tier those flags fall under.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedrevs.sql.gz">frwiki-20200420-flaggedrevs.sql.gz</a> 872 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:51:58</span> <span class='status'>done</span> <span class='title'>This contains per-namespace, per-user and overall statistics for reviews of revisions.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedrevs_statistics.sql.gz">frwiki-20200420-flaggedrevs_statistics.sql.gz</a> 751 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:03:49</span> <span class='status'>done</span> <span class='title'>Interwiki link tracking records</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-iwlinks.sql.gz">frwiki-20200420-iwlinks.sql.gz</a> 49.8 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:34:07</span> <span class='status'>done</span> <span class='title'>Annotation (tag) names and ids.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-change_tag_def.sql.gz">frwiki-20200420-change_tag_def.sql.gz</a> 2 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:44:59</span> <span class='status'>done</span> <span class='title'>This contains information about users who were demoted from being able to review flagged revisions, so they do not get autopromoted by mistake.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedrevs_promote.sql.gz">frwiki-20200420-flaggedrevs_promote.sql.gz</a> 729 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:00:05</span> <span class='status'>done</span> <span class='title'>Wiki external URL link records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-externallinks.sql.gz">frwiki-20200420-externallinks.sql.gz</a> 687.0 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:32:18</span> <span class='status'>done</span> <span class='title'>User group assignments.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-user_groups.sql.gz">frwiki-20200420-user_groups.sql.gz</a> 4 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:34:42</span> <span class='status'>done</span> <span class='title'>This contains a row for each template included in a flagged revision containing the rev id and name of the template as well as the rev id of the flagged revision.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedtemplates.sql.gz">frwiki-20200420-flaggedtemplates.sql.gz</a> 760 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:31:32</span> <span class='status'>done</span> <span class='title'>Name/value pairs for pages.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-page_props.sql.gz">frwiki-20200420-page_props.sql.gz</a> 71.1 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:23:06</span> <span class='status'>done</span> <span class='title'>Wiki page-to-page link records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-pagelinks.sql.gz">frwiki-20200420-pagelinks.sql.gz</a> 1.5 GB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:33:42</span> <span class='status'>done</span> <span class='title'>This contains a row for each flagged article containing the stable revision ID, if the lastest edit was flagged, and how long edits have been pending.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedpages.sql.gz">frwiki-20200420-flaggedpages.sql.gz</a> 796 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:27:27</span> <span class='status'>done</span> <span class='title'>This contains tracking information for edits needing review.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedpage_pending.sql.gz">frwiki-20200420-flaggedpage_pending.sql.gz</a> 767 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:10:37</span> <span class='status'>done</span> <span class='title'>Category information.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-category.sql.gz">frwiki-20200420-category.sql.gz</a> 5.9 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:09:42</span> <span class='status'>done</span> <span class='title'>Nonexistent pages that have been protected.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-protected_titles.sql.gz">frwiki-20200420-protected_titles.sql.gz</a> 88 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:51:07</span> <span class='status'>done</span> <span class='title'>Newer per-page restrictions table.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-page_restrictions.sql.gz">frwiki-20200420-page_restrictions.sql.gz</a> 292 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:49:14</span> <span class='status'>done</span> <span class='title'>Wiki media/files usage records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-imagelinks.sql.gz">frwiki-20200420-imagelinks.sql.gz</a> 153.5 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:06:57</span> <span class='status'>done</span> <span class='title'>Tracks which pages use which Wikidata items or properties and what aspect (e.g. item label) is used.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-wbc_entity_usage.sql.gz">frwiki-20200420-wbc_entity_usage.sql.gz</a> 359.7 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:32:57</span> <span class='status'>done</span> <span class='title'>Language proficiency information per user.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-babel.sql.gz">frwiki-20200420-babel.sql.gz</a> 169 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:28:12</span> <span class='status'>done</span> <span class='title'>This contains the SiteMatrix information from meta.wikimedia.org provided as a table.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-sites.sql.gz">frwiki-20200420-sites.sql.gz</a> 20 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:42:03</span> <span class='status'>done</span> <span class='title'>Wiki template inclusion link records.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-templatelinks.sql.gz">frwiki-20200420-templatelinks.sql.gz</a> 613.8 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:01:47</span> <span class='status'>done</span> <span class='title'>This stores settings on how to select the stable/default revision.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedpage_config.sql.gz">frwiki-20200420-flaggedpage_config.sql.gz</a> 783 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:52:41</span> <span class='status'>done</span> <span class='title'>Past user group assignments.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-user_former_groups.sql.gz">frwiki-20200420-user_former_groups.sql.gz</a> 4 KB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:46:37</span> <span class='status'>done</span> <span class='title'>List of pages' geographical coordinates</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-geo_tags.sql.gz">frwiki-20200420-geo_tags.sql.gz</a> 13.3 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:25:49</span> <span class='status'>done</span> <span class='title'>Redirect list</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-redirect.sql.gz">frwiki-20200420-redirect.sql.gz</a> 21.1 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 12:35:42</span> <span class='status'>done</span> <span class='title'>List of annotations (tags) for revisions and log entries</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-change_tag.sql.gz">frwiki-20200420-change_tag.sql.gz</a> 162.5 MB</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:02:45</span> <span class='status'>done</span> <span class='title'>This contains a row for each media file included in a flagged revision containing the rev id and name of the file as well as the rev id of the flagged revision.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-flaggedimages.sql.gz">frwiki-20200420-flaggedimages.sql.gz</a> 760 bytes</li></ul></li>
+<li class='done'><span class='updates'>2020-04-21 13:08:36</span> <span class='status'>done</span> <span class='title'>A few statistics such as the page count.</span><ul><li class='file'><a href="/frwiki/20200420/frwiki-20200420-site_stats.sql.gz">frwiki-20200420-site_stats.sql.gz</a> 824 bytes</li></ul></li>
+        </ul>
+
+</body>
+</html>
